@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_name">FizyShoppy</string>
+    <string name="tool_bar_tittle">Fizy Made Easy</string>
+    <!--Navigation Drawer Items-->
+
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="notification">Notification</string>
+    <string name="account">Account</string>
+    <string name="welcome_guest">Welcome Guest !!</string>
+    <string name="login_to_checkout">Login to checkout</string>
+    <string name="my_addres_profile">My Address &amp; Profile</string>
+    <!--login-->
+    <string name="forgot_pass"><u>Forgot password ?</u></string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="mobile_or_email">Mobile number / Email ID</string>
+    <string name="password">Password</string>
+    <string name="err_please_enter_valid_emial_pass">Please enter valid email/mobile number</string>
+    <string name="err_please_enter_valid_password">Please enter valid password</string>
+    <string name="delivery_location">DELIVERY LOCATION</string>
+    <string name="dummy_address">BTM Layout 1st Stage, Bengaluru..</string>
+    <string name="err_email_id_mobile">EmailId or mobile number shoudlnot be empty</string>
+
+    <!--OTP SCREEN-->
+
+    <!-- Real Time Permission -->
+    <string name="access_your_location">Access your Location</string>
+    <string name="access_location_msg">Allow us to access your location while you see the application?</string>
+    <string name="access_storage_msg">Allow us to access your storage while you see the application?</string>
+    <string name="access_sms_msg">Allow us to read SMS to verify OTP.</string>
+    <string name="otp_success">OTP Verified Successfully.</string>
+    <string name="read_sms">Read SMS Access</string>
+    <string name="dont_allow">Don\'t Allow</string>
+    <string name="allow">Allow</string>
+
+    <!--NAVIGATION DRAWER ITEMS-->
+    <string-array name="nav_list">
+        <item>@string/my_account</item>
+        <!--    <item>@string/purchage_gift_card</item>-->
+        <item>@string/subscribe_news_letter</item>
+        <item>@string/contact_us</item>
+        <item>@string/gift_card</item>
+        <item>@string/aboutus</item>
+        <item>@string/privacy_policy</item>
+        <item>@string/my_wish_list</item>
+        <item>@string/logout</item>
+    </string-array>
+    <integer-array name="nav_icon_list">
+        <item>@drawable/svg_nav_my_account</item>
+        <!-- <item>@drawable/svg_nav_purchase_gift_orders</item>-->
+        <item>@drawable/unsubsidsed_news_letters</item>
+        <item>@drawable/svg_nav_contactus</item>
+        <item>@drawable/svg_nav_gift_cards</item>
+        <item>@drawable/svg_nav_aboutus</item>
+        <item>@drawable/svg_nav_privacy_policy</item>
+        <item>@drawable/ic_un_selected_wishlist</item>
+        <item>@drawable/svg_nav_logout</item>
+    </integer-array>
+
+
+    <!--navigation items -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="nav_edit_profile">Edit profile</string>
+    <string name="nav_my_account">My Account</string>
+    <string name="nav_purchase_gift_card">Purchase a Gift Card </string>
+    <string name="nav_unsubsidsed_newsletters">Unsubsidsed Newsletter</string>
+    <string name="nav_contactus">Contact Us</string>
+    <string name="nav_giftcard">Gift Cards</string>
+    <string name="nav_aboutus">About Us</string>
+    <string name="nav_privacy_policy">Privacy Policy</string>
+    <string name="nav_logout">Logout</string>
+    <!--error MSG-->
+    <string name="error_no_internet">Please check your internet connection!</string>
+    <string name="error_empty_result">Whoops! We didn\'t find anything here.</string>
+    <string name="error_something_wrong">Whoops! Something went wrong here.</string>
+
+
+    <!--sighup-->
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="conf_pass">Confirm password</string>
+    <string name="register">Register</string>
+    <string name="err_some_went_wrong">Something went wrong</string>
+    <string name="msg_please_wait">Please wait</string>
+    <string name="err_please_enter_valid_name">Please enter valid name</string>
+    <string name="err_please_enter_valid_email">Please enter valid email</string>
+    <string name="err_please_enter_valid_mobile">Please enter valid mobile number</string>
+    <string name="err_please_enter_valid_conf_pass">Please enter valid confirm password</string>
+    <string name="err_please_enter_mismatch_conf_pass">Confirm password should match Password</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="err_please_enter_otp">Please enter valid otp</string>
+    <string name="something_went_wrong_in_resending_otp">Something went wrong in resending otp</string>
+    <string name="resend_otp">Resend OTP</string>
+
+    <!--MULTI VIEW STATE-->
+
+    <string name="refresh">Refresh</string>
+    <string name="no_result_found">No Result Found !!</string>
+
+    <!--HOME FRAGMENT-->
+    <string name="popular_products">Popular Products</string>
+    <string name="category_products">cat Products</string>
+    <string name="product_name"> Apple </string>
+    <string name="category_name">Fruits &amp; Veggies</string>
+    <string name="product_price">Rs 150.00</string>
+    <string name="product_weight">Per kg</string>
+    <!--Dashboard-->
+    <string name="search_hint">Search for Your Favourite Products </string>
+
+    <string name="Rs">\u20B9 </string>
+    <string name="RsSybol">\u20B9</string>
+    <!--Sub Cat-->
+
+    <string name="home_supplies">Home Supplies</string>
+
+    <!--Sub Cat level 2-->
+
+    <string name="home_supplies_category_level_2">Fruits &amp; Veggies</string>
+
+    <!--My Cart screen-->
+    <string name="cart_product_name">Home Supplies</string>
+    <string name="product_deiscount_price_text"> \u20B9 100</string>
+    <string name="product_original_price_text"> \u20B9  105 </string>
+    <string name="product_colour_name">( Orange &amp; Off White )</string>
+    <string name="move_to_wish_list"> Move to WishList </string>
+    <string name="remove"> Remove</string>
+    <string name="count">111</string>
+    <string name="rating_count">29/22</string>
+
+    <string name="continue_text">continue</string>
+    <string name="payble_amt">Amt Payable   %1$d   \u20B91999</string>
+
+    <string name="priced_items">Price ( %1$d items )</string>
+
+    <string name="priced_delivery_items">Delivery  %1$d \u20B945 )</string>
+
+    <!--MY CHECKOUT SCREEN -->
+    <string name="cash_on_delelivery">Cash on Delivery </string>
+    <string name="pay_online">Pay Online </string>
+    <string name="tool_bar_tittle_check_out">CHECKOUT</string>
+    <string name="check_out_item_count">12</string>
+
+    <!--MY WISH LIST SCREEN-->
+    <string name="tool_bar_tittle_my_wish_list">MY WISHLIST</string>
+    <string name="add_to_cart"> Add to Cart </string>
+
+
+    <!--PAYMENT SCREEN -->
+    <string name="payment">Payment </string>
+    <string name="address">Address</string>
+    <string name="landmark_easy_reach_out">Landmark for easy  reach out </string>
+    <string name="add_address">Add Address</string>
+    <string name="dummy_product_name">Fruits &amp; Vegitable</string>
+
+    <string name="products_count">200 products</string>
+    <string name="filter">Filter</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+    <string name="weight">100 grms</string>
+
+    <!-- delievery location-->
+    <string name="delievery_location_selection">Please choose your delivery location.</string>
+    <string name="delievery_location">Delivery Location</string>
+    <string name="use_my_location">Use My Location </string>
+    <string name="set_location_manually">Set Location Manually</string>
+    <string name="no_geocoder_available">No geocoder available</string>
+
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="address_found">Address found</string>
+
+    <!-- Customer Care Screen -->
+
+    <string name="reach_for_any_query_on">REACH FOR ANY QUERY ON</string>
+    <string name="call_us_on">Call us on</string>
+    <string name="customer_care_email">customercare@fizyshoppy.com</string>
+    <string name="customer_care_mobile">+91 80 4200 4100</string>
+    <string name="subscribe_at">Subscribe @</string>
+
+    <!--ERROR MESSAGES-->
+    <string name="user_not_login">user not login ,please need to login </string>
+    <string name="empty_data">list is empty please retry..</string>
+    <string name="some_thing_went_wrong"> Whoops! Something went wrong !!</string>
+    <string name="retry"> Retry</string>
+
+    <!--Product Detail-->
+    <string name="size">Size</string>
+    <string name="add_to_bag">ADD TO BAG</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="dummy_header_product_name">AKS</string>
+    <string name="dummy_product_price">₹ 2440.50</string>
+    <string name="dummy_product_detail">anarkali kurta</string>
+    <string name="tap_for_best_price">Tap for best price</string>
+    <string name="dummy_discount_price">₹ 120.00 </string>
+    <string name="dummy_discount">(10% OFF)</string>
+    <string name="free_shipping">Free Shipping</string>
+    <string name="additional_tax_may_apply_charged_at_checkout">Additional tax may apply Charged at checkout</string>
+    <string name="free_shipping_conditions">Free Shipping on Total Amount of 500 and Above</string>
+    <string name="terms_conditions"><![CDATA[T&C]]></string>
+    <string name="cashback">Get 10% CASHBACK</string>
+    <string name="cashback_conditions">Get 10% cashback on using HDFC Card</string>
+    <string name="flat_off">Flat 20% off on MobiKwik</string>
+    <string name="s">S</string>
+    <string name="in_stock">IN STOCK</string>
+    <string name="dummy_ships">Ships to 560016</string>
+    <string name="change">Change</string>
+    <string name="view_similar">View Similar</string>
+    <string name="size_chart"><u>Size Chart</u></string>
+    <string name="dummy_product_desc"><![CDATA[Fashion Dove Designer Georgette Saree For Womern (Orange & Off White)]]></string>
+    <string name="info">+INFO</string>
+    <string name="detail">product detail </string>
+    <!--About Us Activity-->
+    <string name="about_us_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    \n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        \n\nLorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </string>
+    <string name="sincerely">Sincerely,</string>
+    <string name="name_of_founder">Founder CEO,\nAnitha Reddy.M</string>
+    <string name="tv_phone_number">Phone Number</string>
+    <string name="tv_email">Email</string>
+    <string name="tc_contact_number1">+91 9696969696</string>
+    <string name="tv_email_id">fizyshoppy@gmail.com</string>
+
+    <!--Privacy Policy Activity-->
+    <string name="tv_privacy_policy_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.
+    \n\nLorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.
+    </string>
+    <string name="tv_dummy_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </string>
+    <string name="tv_information_we_collect">Information we collect</string>
+    <string name="tv_contact_information">Contact Information</string>
+    <string name="we_collect_information_in_difference_ways">We collect information in difference ways</string>
+    <string name="tv_sharing_of_information_with_third_party">Sharing of information with third party</string>
+    <string name="email_opt_out">Email Opt-Out</string>
+    <string name="third_party_sites">Third party sites</string>
+    <string name="tv_grievance_officer">Grievance Officer</string>
+    <string name="tv_mr_tanveer">Mr. Tanveer</string>
+    <string name="jurisdiction">Jurisdiction</string>
+    <string name="email_mobile_number">Enter Your e-mail</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="need_24_7_support">NEED 24/7 SUPPORT</string>
+
+    <!--Purchase Gift Card Activity-->
+    <string name="recipient_name">Recipient\'s Name</string>
+    <string name="recipient_email">Recipient\'s Email</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email">Your Email</string>
+    <string name="message">Message</string>
+    <string name="_500">500</string>
+    <string name="_100">100</string>
+    <string name="_1000">1000</string>
+    <string name="_1500">1500</string>
+
+    <string name="my_account">My Account</string>
+    <string name="purchage_gift_card">Purchase a Gift Card </string>
+    <string name="subscribe_news_letter">Subscribe Newsletter</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="gift_card">Gift Cards</string>
+    <string name="aboutus">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="logout">Logout</string>
+    <string name="logout_message">Are you sure? You want to logout!!</string>
+    <string name="exit_message">Are you sure? You want to exit!!</string>
+    <string name="my_wish_list">Wish List</string>
+
+    <!--Change Passwrd-->
+    <string name="new_pass">New Password</string>
+    <string name="done">Done</string>
+    <string name="conf_password">Confirm Password</string>
+    <string name="forgot_Password">Forgot Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="please_enter_new_pass">Please enter New Password and Confirm Password to Reset your Password.</string>
+
+    <!--Navigation Menu  animation-->
+    <string name="menu_vector_path" translatable="false">M20 30,L80 30,M20 50,L80 50,M20 70,L80 70</string>
+    <string name="back_vector_path" translatable="false">M50 25,L80 50,M20 50,L80 50,M50 75,L80 50</string>
+    <string name="add_vector_path" translatable="false">M50 20,L50 80,M20 50,L80 50</string>
+    <string name="remove_vector_path" translatable="false">M60 25,L75 45,M25 75,L60 25</string>
+
+    <!--My Account Activity-->
+    <string name="et_enter_your_name">Name</string>
+    <string name="et_enter_your_email_id">Email id</string>
+    <string name="et_enter_your_mobile_number">Mobile Number</string>
+    <string name="et_enter_your_city">City</string>
+    <string name="et_enter_your_address_line_1">Address line 1</string>
+    <string name="et_enter_your_address_line_2">Address line 2</string>
+    <string name="et_enter_your_landmark">Landmark(Optional)</string>
+    <string name="et_change_password">Change Password</string>
+    <string name="please_wait">Please wait..!!</string>
+    <string name="et_new_password">New Password</string>
+    <string name="btn_save_continue">SAVE AND CONTINUE</string>
+
+    <integer name="slide_animation_duration">300</integer>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimens_14"
+    android:paddingRight="@dimen/dimens_14">
+    <LinearLayout
+        android:id="@+id/drawer_row_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/nav_icon"
+            style="@style/menu_drawer_icon"
+            />
+        <TextView
+            android:id="@+id/nav_title"
+            style="@style/menu_drawer_text"
+            android:layout_toRightOf="@+id/nav_icon" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        style="@style/menu_drawer_divider"
+        android:layout_below="@+id/drawer_row_view">
+    </View>
+</RelativeLayout>

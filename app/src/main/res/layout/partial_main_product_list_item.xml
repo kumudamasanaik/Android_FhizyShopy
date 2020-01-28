@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dimens_100"
+    android:layout_height="@dimen/dimens_130"
+    android:layout_gravity="center_horizontal"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardElevation="@dimen/dimens_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_5">
+
+
+        <com.fizyshoppy.app.customview.CustomCirculerImageVIew
+            android:id="@+id/image_product"
+            style="@style/round_circle_product_image_style"
+            android:layout_gravity="center"
+            android:padding="@dimen/dimens_2"
+            app:civ_border_color="@color/md_red_A700"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tv_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingBottom="@dimen/dimens_2"
+            android:paddingLeft="@dimen/dimens_5"
+            android:paddingRight="@dimen/dimens_5"
+            android:paddingTop="@dimen/dimens_2"
+            android:text="@string/dummy_product_name"
+            android:textColor="@color/app_text_light_black"
+            android:textSize="@dimen/small" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

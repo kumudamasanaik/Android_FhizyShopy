@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimens_85"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_5"
+    android:background="@color/app_text_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="@dimen/dimens_85"
+            android:layout_height="@dimen/dimens_85"
+            android:background="@drawable/ic_product_red_rect"
+            android:padding="@dimen/dimens_1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_shadow" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/image_product"
+                style="@style/popular_product_image_style" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_shadow" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            style="@style/product_nameStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_cat_name"
+                style="@style/popular_product_catnameStyle"
+                android:layout_weight="1.5" />
+
+            <TextView
+                android:id="@+id/tv_weight"
+                style="@style/popular_product_weightStyle"
+                android:layout_weight="1"
+                android:text="@string/product_weight" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_original_price"
+                style="@style/popular_product_priceStyle"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/product_price"
+                android:textSize="@dimen/micro" />
+
+            <TextView
+                android:id="@+id/tv_saved_price"
+                style="@style/popular_product_priceStyle"
+                android:layout_weight="1"
+                android:text="@string/product_price" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

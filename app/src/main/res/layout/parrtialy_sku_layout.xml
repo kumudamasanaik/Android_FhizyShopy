@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/weigh_control"
+    android:layout_width="@dimen/dimens_125"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimens_1"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_rect_grey">
+
+
+    <TextView
+        android:id="@+id/tv_sku"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lines="2"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimens_2"
+        android:paddingRight="@dimen/dimens_2"
+        android:text="@string/weight"
+        android:textColor="@color/app_text_black"
+        android:textSize="@dimen/micro"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/tv_changewieght"
+        android:layout_width="@dimen/dimens_25"
+        android:layout_height="@dimen/dimens_25"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        app:srcCompat="@drawable/ic_arrow_drop_down" />
+
+</LinearLayout>

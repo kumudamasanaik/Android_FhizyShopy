@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="@dimen/dimens_10"
+    android:layout_marginRight="@dimen/dimens_10">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_product_desc" />
+
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_product_name"
+            android:text="@string/dummy_product_price"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tv_discount_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_product_name"
+            android:layout_marginLeft="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:layout_toEndOf="@id/tv_price"
+            android:text="@string/dummy_discount_price"
+            android:textSize="@dimen/dimens_6sp" />
+
+        <TextView
+            android:id="@+id/tv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_product_name"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:layout_toEndOf="@id/tv_discount_price"
+            android:text="@string/dummy_discount"
+            android:textColor="@color/md_red_800"
+            android:textSize="@dimen/dimens_6sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_discount"
+            android:layout_marginTop="@dimen/dimens_2"
+            android:text="@string/additional_tax_may_apply_charged_at_checkout"
+            android:textSize="@dimen/dimens_6sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="@dimen/dimens_50"
+        android:layout_height="@dimen/dimens_20"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimens_10"
+        android:background="@drawable/bg_rect_grey"
+        android:text="@string/info" />
+
+</LinearLayout>

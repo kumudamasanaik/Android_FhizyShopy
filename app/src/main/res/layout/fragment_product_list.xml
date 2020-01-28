@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fizyshoppy.app.customview.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multistateview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/products_count_style"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/iv_filter"
+                style="@style/productList_filter_style"
+                android:drawableTop="@drawable/ic_filter"
+                android:text="@string/filter"
+
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/iv_switch_menu"
+                style="@style/productList_filter_style"
+                android:drawableTop="@drawable/ic_switch_menu"
+                android:text="@string/grid" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_0.5"
+            android:background="@color/browser_actions_divider_color" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_cartproduct_list"
+            style="@style/home_horizontal_list"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            tools:listitem="@layout/adapter_my_cart_list_item" />
+
+    </LinearLayout>
+</com.fizyshoppy.app.customview.MultiStateView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/dimens_5"
+    android:layout_marginTop="@dimen/dimens_5"
+    android:background="@color/cardview_shadow_end_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimens_40"
+        android:layout_weight=".5"
+        android:background="@color/cardview_light_background"
+        android:gravity="center"
+        android:text="@string/priced_items" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimens_40"
+        android:layout_weight=".5"
+        android:background="@color/cardview_light_background"
+        android:gravity="center"
+        android:text="@string/priced_delivery_items" />
+
+
+    <TextView
+        style="@style/amt_payble_text_style"
+        android:layout_weight="1"
+        android:text="@string/payble_amt"
+        android:textColor="@color/cardview_light_background" />
+
+
+</LinearLayout>

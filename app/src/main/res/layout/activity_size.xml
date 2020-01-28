@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_men_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_10"
+        tools:itemCount="3"
+        tools:listitem="@layout/partial_mens_size_table_header" />
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_size_image"
+        style="@style/size_chart_men_image_style" />
+
+</LinearLayout>

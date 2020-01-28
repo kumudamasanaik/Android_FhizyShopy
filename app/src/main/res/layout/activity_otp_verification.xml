@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_otp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen.otp.OtpVerificationActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="172dp"
+        android:layout_height="121dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        app:srcCompat="@drawable/logo" />
+
+    <com.fizyshoppy.app.customview.PinEntryEditText
+        android:id="@+id/et_otp_entry"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="92dp"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:maxLength="4"
+        android:textIsSelectable="false"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_verify_otp"
+        style="@style/login_btn"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/dimens_100"
+        android:text="@string/verify_otp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_resend_otp"
+        style="@style/simp_btn_no_bg"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimens_10"
+        android:text="@string/resend_otp" />
+</LinearLayout>

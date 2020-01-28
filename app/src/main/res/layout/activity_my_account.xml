@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_save_continue"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/dimens_5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_first_name"
+                    style="@style/et_my_account_edit_text_style"
+                    android:hint="@string/et_enter_your_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:nextFocusForward="@id/et_city" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/tv_mobile_number"
+                    style="@style/et_my_account_edit_text_style"
+                    android:layout_marginTop="@dimen/dimens_5"
+                    android:hint="@string/et_enter_your_mobile_number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/tv_email"
+                    style="@style/et_my_account_edit_text_style"
+                    android:layout_marginTop="@dimen/dimens_5"
+                    android:hint="@string/et_enter_your_email_id" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_city"
+                    style="@style/et_my_account_edit_text_style"
+                    android:layout_marginTop="@dimen/dimens_5"
+                    android:hint="@string/et_enter_your_city"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/et_address_line_1"
+                    android:inputType="text"
+                    android:nextFocusDown="@id/et_address_line_1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_address_line_1"
+                    style="@style/et_my_account_edit_text_style"
+                    android:layout_marginTop="@dimen/dimens_5"
+                    android:hint="@string/et_enter_your_address_line_1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_address_line_2"
+                    style="@style/et_my_account_edit_text_style"
+                    android:layout_marginTop="@dimen/dimens_5"
+                    android:hint="@string/et_enter_your_address_line_2"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_landmark"
+                    style="@style/et_my_account_edit_text_style"
+                    android:layout_marginTop="@dimen/dimens_5"
+                    android:hint="@string/et_enter_your_landmark"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/et_my_account_edit_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:paddingStart="@dimen/dimens_3"
+                android:text="@string/et_change_password"
+                android:textColor="@color/app_text_black"
+                app:textAllCaps="false" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_new_password"
+                    style="@style/et_my_account_edit_text_style"
+                    android:layout_marginTop="@dimen/dimens_5"
+                    android:hint="@string/et_new_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_save_continue"
+        style="@style/btn_check_out_style"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btn_save_continue" />
+
+
+</RelativeLayout>

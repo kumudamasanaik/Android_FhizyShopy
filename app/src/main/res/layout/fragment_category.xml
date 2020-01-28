@@ -1,0 +1,46 @@
+<com.fizyshoppy.app.customview.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multistateview"
+    style="@style/MultiStateViewStyle"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_main_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimens_5"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:listitem="@layout/partial_main_product_list_item" />
+
+        <LinearLayout
+            android:id="@+id/layout_banner_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/popular_products_style"
+                android:text="@string/home_supplies"
+                android:textAllCaps="true" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_home_suppliers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimens_5"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/partial_main_product_list_item" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.fizyshoppy.app.customview.MultiStateView>

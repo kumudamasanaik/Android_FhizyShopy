@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.BottomNavigationView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_botom_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/md_white_1000"
+    android:elevation="@dimen/dimens_5"
+    app:itemIconTint="@drawable/nav_item_color_state"
+    app:itemTextColor="@drawable/nav_item_color_state"
+    app:layout_behavior="com.fizyshoppy.app.customview.BottomNavigationBehavior"
+    app:menu="@menu/my_navigation_items" />
+

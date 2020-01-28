@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens_10"
+        android:layout_marginRight="@dimen/dimens_10">
+
+        <TextView
+            android:id="@+id/tv_best_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_5"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/tap_for_best_price"
+            android:textSize="@dimen/small" />
+
+        <TextView
+            android:id="@+id/tv_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_best_price"
+            android:layout_marginStart="@dimen/dimens_5"
+            android:text="@string/additional_tax_may_apply_charged_at_checkout"
+            android:textSize="@dimen/dimens_6sp" />
+
+        <TextView
+            android:id="@+id/tv_discount_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimens_1"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:layout_toStartOf="@id/tv_discount"
+            android:text="@string/dummy_discount_price"
+            android:textSize="@dimen/dimens_6sp" />
+
+        <TextView
+            android:id="@+id/tv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimens_5"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:layout_toLeftOf="@id/tv_price"
+            android:text="@string/dummy_discount"
+            android:textSize="@dimen/dimens_6sp"
+            android:textColor="@color/md_red_800"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:text="@string/dummy_product_price"
+            android:textColor="@color/colorBlack" />
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/menu_drawer_divider" />
+    <RelativeLayout
+        android:id="@+id/flat_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens_10"
+        android:layout_marginRight="@dimen/dimens_10">
+
+        <TextView
+            android:id="@+id/tv_flat_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_5"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/flat_off"
+            android:textSize="@dimen/small" />
+
+        <TextView
+            android:id="@+id/tv_flat_off_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_flat_off"
+            android:layout_marginStart="@dimen/dimens_5"
+            android:text="@string/flat_off"
+            android:textSize="@dimen/dimens_6sp" />
+
+        <TextView
+            android:id="@+id/tv_terms_conditions_flat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:drawablePadding="@dimen/dimens_2"
+            android:drawableEnd="@drawable/svg_nav_login_arrow"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/colorBlack" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/menu_drawer_divider" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens_10"
+        android:layout_marginRight="@dimen/dimens_10">
+
+        <TextView
+            android:id="@+id/tv_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_5"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/free_shipping"
+            android:textSize="@dimen/small" />
+
+        <TextView
+            android:id="@+id/tv_free_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_free"
+            android:layout_marginStart="@dimen/dimens_5"
+            android:text="@string/free_shipping_conditions"
+            android:textSize="@dimen/dimens_6sp" />
+
+        <TextView
+            android:id="@+id/tv_terms_conditions_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:drawablePadding="@dimen/dimens_2"
+            android:drawableEnd="@drawable/svg_nav_login_arrow"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/colorBlack" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/menu_drawer_divider" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens_10"
+        android:layout_marginRight="@dimen/dimens_10">
+
+        <TextView
+            android:id="@+id/tv_cashback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_5"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/cashback"
+            android:textSize="@dimen/small" />
+
+        <TextView
+            android:id="@+id/tv_cashback_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cashback"
+            android:layout_marginStart="@dimen/dimens_5"
+            android:text="@string/cashback_conditions"
+            android:textSize="@dimen/dimens_6sp" />
+
+        <TextView
+            android:id="@+id/tv_terms_conditions_cashback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:drawablePadding="@dimen/dimens_2"
+            android:drawableRight="@drawable/svg_nav_login_arrow"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/colorBlack" />
+
+    </RelativeLayout>
+    <View
+        style="@style/menu_drawer_divider" />
+</LinearLayout>

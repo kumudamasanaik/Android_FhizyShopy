@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fizyshoppy.app.customview.MultiStateView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_payment"
+            style="@style/payment_text_btn_style" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_name"
+            style="@style/payment_edit_text"
+            android:hint="@string/name" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_email"
+            style="@style/payment_edit_text"
+            android:hint="@string/email" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_mobile"
+            style="@style/payment_edit_text"
+            android:hint="@string/mobile_number" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_address"
+            style="@style/payment_edit_text"
+            android:layout_height="@dimen/dimens_70"
+            android:gravity="start"
+            android:hint="@string/address" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_landmark"
+            style="@style/payment_edit_text"
+            android:hint="@string/landmark_easy_reach_out" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_add_address"
+            style="@style/payment_add_address_text_style"
+            android:hint="@string/add_address" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_checkout"
+            style="@style/payment_add_address_text_style"
+           />
+
+
+    </LinearLayout>
+
+
+</com.fizyshoppy.app.customview.MultiStateView>

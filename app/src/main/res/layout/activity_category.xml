@@ -1,0 +1,90 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/nested_scrollview_style">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_main_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimens_5"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:listitem="@layout/partial_main_product_list_item" />
+
+        <LinearLayout
+            android:id="@+id/layout_category_level2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/popular_products_style"
+                android:text="@string/home_supplies_category_level_2"
+                android:textAllCaps="true" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_category_level_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimens_5"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/partial_main_product_list_item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sub_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sub_cat_name"
+                style="@style/popular_products_style"
+                android:text="@string/home_supplies"
+                android:textAllCaps="true" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_home_suppliers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimens_5"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/partial_main_product_list_item" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_all_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/popular_products_style"
+                android:text="@string/home_supplies"
+                android:textAllCaps="true"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_all_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/partial_main_product_list_item" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

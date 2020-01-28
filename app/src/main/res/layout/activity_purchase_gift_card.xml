@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_banner_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimens_10"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_recipient_name"
+                style="@style/payment_edit_text"
+                android:hint="@string/recipient_name"
+                android:inputType="text" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_recipient_email"
+                style="@style/payment_edit_text"
+                android:layout_marginTop="@dimen/dimens_3"
+                android:hint="@string/recipient_email" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_your_name"
+                style="@style/payment_edit_text"
+                android:layout_marginTop="@dimen/dimens_3"
+                android:hint="@string/your_name" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_your_email"
+                style="@style/payment_edit_text"
+                android:layout_marginTop="@dimen/dimens_3"
+                android:hint="@string/your_email" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_message"
+                style="@style/payment_edit_text"
+                android:layout_height="@dimen/dimens_60"
+                android:layout_marginTop="@dimen/dimens_3"
+                android:gravity="left"
+                android:hint="@string/message"
+                android:inputType="text"
+                android:maxLines="4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/btn_purchase_gift_card_style"
+                    android:text="@string/_100" />
+
+                <Button
+                    style="@style/btn_purchase_gift_card_style"
+                    android:layout_marginLeft="@dimen/dimens_5"
+                    android:text="@string/_500" />
+
+                <Button
+                    style="@style/btn_purchase_gift_card_style"
+                    android:layout_marginLeft="@dimen/dimens_5"
+                    android:text="@string/_1000" />
+
+                <Button
+                    style="@style/btn_purchase_gift_card_style"
+                    android:layout_marginLeft="@dimen/dimens_5"
+                    android:text="@string/_1500" />
+
+            </LinearLayout>
+
+            <Button
+                style="@style/payment_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:layout_marginBottom="@dimen/dimens_20"
+                android:background="@color/btn_bg"
+                android:text="@string/buy_now"
+                android:textAllCaps="false"
+                android:textColor="@color/app_text_white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

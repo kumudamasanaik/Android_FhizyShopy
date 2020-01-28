@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/tv_phone_number"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dimens_25"
+            android:layout_height="@dimen/dimens_40"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_call" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_contact_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/tc_contact_number1" />
+
+            <TextView
+                android:id="@+id/tv_contact_num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/tc_contact_number1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

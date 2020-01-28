@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_text_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimens_10">
+
+        <TextView
+            android:id="@+id/tv_notification_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/we_collect_information_in_difference_ways"
+            android:textColor="@color/md_grey_500" />
+
+        <TextView
+            android:id="@+id/tv_notification_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_notification_text"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:fontFamily="@font/roboto_regular"
+            android:text="11-09-2018"
+            android:textColor="@color/md_grey_700" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

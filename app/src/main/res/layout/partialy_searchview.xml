@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/searchview_style"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/layout_search_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/cardview_light_background">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ic_menu_search"
+            style="@style/search_iconStyle"
+            android:layout_gravity="left|center"
+            app:srcCompat="@drawable/ic_search_" />
+
+        <EditText
+            android:id="@+id/search_badge"
+            style="@style/search_editTextStyle"
+            android:layout_height="@dimen/dimens_25"
+            android:background="@null"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textColorHint="@color/app_text_black"
+            android:hint="@string/search_hint"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

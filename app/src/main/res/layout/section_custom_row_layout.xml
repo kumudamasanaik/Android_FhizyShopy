@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimens_2"
+    android:layout_marginBottom="@dimen/dimens_2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimens_5">
+
+        <TextView
+            android:id="@+id/section_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_10"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="start|center"
+            android:text="@string/app_name"
+            android:textColor="@color/app_text_white"
+            android:textSize="@dimen/medium" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/section_show_all_button"
+            android:layout_width="@dimen/dimens_25"
+            android:layout_height="@dimen/dimens_25"
+            android:layout_gravity="end"
+            android:background="@drawable/ic_arrow_drop_down"
+            android:backgroundTint="@color/app_text_white"
+            android:gravity="end"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:text="@string/free_shipping"
+            android:textAllCaps="true"
+            android:textColor="@color/app_text_white"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!--  recycler view for items -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_view"
+        android:layout_margin="@dimen/dimens_5" />
+</RelativeLayout>

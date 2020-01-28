@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="@dimen/dimens_145"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_2"
+    android:background="@color/browser_actions_divider_color"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dimens_1"
+        android:layout_margin="@dimen/dimens_0.5"
+        android:background="@color/cardview_light_background"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_product"
+            style="@style/product_image_gridstyle"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_2"
+            android:layout_marginStart="@dimen/dimens_2">
+
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                style="@style/product_name__style"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimens_5" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_wish"
+                style="@style/iv_wish"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_product_colour"
+            style="@style/product_colour_Text_style"
+            android:layout_marginLeft="@dimen/dimens_2"
+            android:layout_marginStart="@dimen/dimens_2"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:layout_marginLeft="@dimen/dimens_2"
+            android:layout_marginStart="@dimen/dimens_2"
+            android:gravity="start|center">
+
+            <TextView
+                android:id="@+id/product_discount_price"
+                style="@style/product_discount_price_style" />
+
+            <TextView
+                android:id="@+id/product_original_price"
+                style="@style/product_original_price__style"
+                android:layout_toEndOf="@+id/product_discount_price" />
+
+
+        </RelativeLayout>
+
+
+        <include
+            android:id="@+id/layout_sku_view"
+            layout="@layout/parrtialy_sku_layout"
+            android:layout_width="@dimen/dimens_100"
+            android:layout_height="@dimen/dimens_25"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/dimens_2"
+            android:layout_marginStart="@dimen/dimens_2"/>
+
+        <include
+            layout="@layout/partial_weight_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/dimens_2"
+            android:layout_marginStart="@dimen/dimens_2"
+            android:layout_margin="@dimen/dimens_3" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

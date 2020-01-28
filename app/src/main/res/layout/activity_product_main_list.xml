@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_product_main_list"
+        style="@style/prdouct_list_product_header_style"
+        android:text="@string/dummy_product_name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_0.5"
+        android:background="@color/cardview_light_background" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        style="@style/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_size">
+
+    </android.support.design.widget.TabLayout>
+
+
+    <com.fizyshoppy.app.customview.MultiStateView
+        android:id="@+id/productMainMultiStateView"
+        style="@style/MultiStateViewStyle"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/cat_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.fizyshoppy.app.customview.MultiStateView>
+
+</LinearLayout>

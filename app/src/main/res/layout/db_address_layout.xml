@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/address_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimens_2">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimens_2"
+        android:maxLines="1"
+        android:text="@string/delivery_location"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimens_9sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_title"
+        android:layout_toLeftOf="@+id/change_address_icon"
+        android:layout_toRightOf="@+id/address_icon"
+        android:ellipsize="marquee"
+        android:text="@string/dummy_address"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimens_10sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/address_icon"
+        android:layout_width="@dimen/dimens_9"
+        android:layout_height="@dimen/dimens_9"
+        android:layout_below="@+id/toolbar_title"
+        android:layout_marginRight="@dimen/dimens_4"
+        android:layout_marginTop="@dimen/dimens_2"
+        app:srcCompat="@drawable/svg_location_icon_orange" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/change_address_icon"
+        android:layout_width="@dimen/dimens_10"
+        android:layout_height="@dimen/dimens_10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/toolbar_title"
+        android:layout_marginLeft="@dimen/dimens_4"
+        android:layout_marginStart="@dimen/dimens_4"
+        android:layout_marginRight="@dimen/dimens_8"
+        android:layout_marginEnd="@dimen/dimens_8"
+        app:srcCompat="@drawable/svg_edit_profile_orange" />
+</RelativeLayout>

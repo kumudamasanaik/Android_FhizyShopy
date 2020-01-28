@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/svg_nav_edit_profile"
+            android:title="@string/nav_edit_profile" />
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/svg_nav_my_account"
+            android:title="@string/nav_my_account" />
+        <item
+            android:id="@+id/nav_purchase_gift_card"
+            android:icon="@drawable/svg_nav_purchase_gift_orders"
+            android:title="@string/nav_purchase_gift_card" />
+        <item
+            android:id="@+id/nav_unsubsidsed_newsletters"
+            android:icon="@drawable/unsubsidsed_news_letters"
+            android:title="@string/nav_unsubsidsed_newsletters" />
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/svg_nav_contactus"
+            android:title="@string/nav_contactus" />
+
+
+        <item
+            android:id="@+id/nav_giftcard"
+            android:icon="@drawable/svg_nav_gift_cards"
+            android:title="@string/nav_giftcard" />
+
+
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/svg_nav_aboutus"
+            android:title="@string/nav_aboutus" />
+
+
+        <item
+            android:id="@+id/nav_privacy_policy"
+            android:icon="@drawable/svg_nav_privacy_policy"
+            android:title="@string/nav_privacy_policy" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/svg_nav_logout"
+            android:title="@string/nav_logout" />
+    </group>
+
+
+</menu>

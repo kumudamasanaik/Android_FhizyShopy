@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_footer_home"
+        android:title="@string/home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_category"
+        android:enabled="true"
+        android:icon="@drawable/ic_footer_product"
+        android:title="@string/category"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_cart"
+        android:enabled="true"
+        android:icon="@drawable/ic_footer_cart"
+        android:title="@string/cart"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/notifications"
+        android:enabled="true"
+        android:icon="@drawable/ic_footer_notification"
+        android:title="@string/notification"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_account"
+        android:enabled="true"
+        android:icon="@drawable/ic_footer_account"
+        android:title="@string/account"
+        app:showAsAction="always" />
+</menu>

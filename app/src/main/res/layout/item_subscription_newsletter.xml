@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimens_5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/news_letter_subs_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_40"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:background="@color/app_bg"
+            android:text="Subscription to the newsletter"
+            android:textColor="@color/app_text_black" />
+
+        <ImageView
+            android:id="@+id/subs_news_letter_icon"
+            android:layout_width="@dimen/dimens_200"
+            android:layout_height="@dimen/dimens_150"
+            android:layout_below="@+id/news_letter_subs_text"
+            android:layout_centerHorizontal="true"
+            android:background="@color/app_bg"
+            android:layout_marginTop="@dimen/dimens_30"
+            app:srcCompat="@drawable/ic_subscription" />
+
+        <EditText
+            android:id="@+id/et_mobile_number_login"
+            style="@style/edit_text_style"
+            android:layout_below="@+id/subs_news_letter_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_30"
+            android:hint="@string/email_mobile_number"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/app_text_black" />
+
+        <Button
+            android:id="@+id/btn_subscribe"
+            android:layout_width="@dimen/dimens_120"
+            android:layout_height="@dimen/dimens_35"
+            android:layout_below="@+id/et_mobile_number_login"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dimens_30"
+            android:layout_marginTop="@dimen/dimens_30"
+            android:background="@drawable/ic_button"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/subscribe"
+            android:textAllCaps="false"
+            android:textColor="@color/app_text_white" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btn_close_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/ic_close_black" />
+</FrameLayout>

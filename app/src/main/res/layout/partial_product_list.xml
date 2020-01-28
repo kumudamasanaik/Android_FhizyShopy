@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/prdouct_list_product_header_style"
+            android:text="@string/dummy_product_name"
+           />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_0.5"
+            android:background="@color/cardview_light_background"/>
+
+        <include
+            android:id="@+id/layout_swiping_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/partial_swiping_tab_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/products_count_style"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/iv_filter"
+                style="@style/productList_filter_style"
+                android:drawablePadding="@dimen/dimens_1"
+                android:drawableTop="@drawable/ic_filter"
+                android:text="@string/filter"
+
+                />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/iv_switch_menu"
+                style="@style/productList_filter_style"
+                android:drawableTop="@drawable/ic_switch_menu"
+                android:text="@string/grid" />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/view_divider"
+            android:background="@color/md_grey_500" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_product_list"
+            style="@style/home_horizontal_list"
+            tools:itemCount="5"
+            tools:listitem="@layout/adapter_my_cart_list_item" />
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

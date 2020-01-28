@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fizyshoppy.app.customview.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_product_list"
+        style="@style/home_horizontal_list"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        tools:listitem="@layout/adapter_my_cart_list_item" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_botom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_amt_payble_view"
+            layout="@layout/partial_botom_amt_payble_view"/>
+
+
+        <TextView
+            android:id="@+id/tv_continue"
+            style="@style/btn_check_out_style" />
+
+
+    </LinearLayout>
+
+
+</com.fizyshoppy.app.customview.MultiStateView>

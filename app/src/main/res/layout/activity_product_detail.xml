@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.productdetail.ProductDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/partial_image_viewpager" />
+
+            <include layout="@layout/partial_product_detail_price" />
+
+            <View style="@style/menu_drawer_divider" />
+
+            <include layout="@layout/partial_best_price" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginRight="@dimen/dimens_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimens_5"
+                    android:text="@string/size"
+                    android:textSize="@dimen/small" />
+
+                <TextView
+                    android:id="@+id/tv_size_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dimens_10"
+                    android:text="@string/size_chart"
+                    android:textColor="@color/md_red_700"
+                    android:textSize="@dimen/small" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:layout_marginRight="@dimen/dimens_10"
+                android:layout_marginBottom="@dimen/dimens_5"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/partial_size" />
+        </LinearLayout>
+
+        <include layout="@layout/partial_cart_btns" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:layout_marginRight="@dimen/dimens_10"
+                android:text="@string/in_stock"
+                android:textColor="@color/md_green_700"
+                android:textSize="@dimen/small" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_in_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginRight="@dimen/dimens_10"
+                android:orientation="vertical"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/partial_stock" />
+
+            <View style="@style/menu_drawer_divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginRight="@dimen/dimens_10"
+                android:text="@string/view_similar"
+                android:textSize="@dimen/small" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_similar_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginRight="@dimen/dimens_10"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:itemCount="5"
+                tools:listitem="@layout/partial_similar_item" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

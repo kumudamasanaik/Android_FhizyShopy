@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_10"
+        app:srcCompat="@drawable/ic_arrow_back_" />
+
+    <include
+        android:id="@+id/layout_banner"
+        layout="@layout/item_banner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimens_1" />
+
+    <ImageView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dimens_10"
+        app:srcCompat="@drawable/svg_nav_my_account" />
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_10"
+        android:layout_toLeftOf="@id/account"
+        app:srcCompat="@drawable/svg_nav_my_account" />
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_10"
+        android:layout_toLeftOf="@id/cart"
+        app:srcCompat="@drawable/svg_nav_my_account" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/svg_nav_my_account" />
+
+</RelativeLayout>
